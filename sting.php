@@ -40,14 +40,13 @@
     echo "Kata kedua: " . substr($string2, 2, 5) . "<br>";
     echo "Kata Ketiga: " . substr($string2, 7, 9) . "<br>";
 
+    //Soal 3
     echo "<h3> Soal No 3 </h3>";
-    /*
-            SOAL NO 3
-            Mengubah karakter atau kata yang ada di dalam sebuah string.
-        */
+
     $string3 = "PHP is old but sexy!";
-    echo "String: \"$string3\" ";
-    // OUTPUT : "PHP is old but awesome"
+    $replace = substr_replace($string3, "awesome", 15, 5);
+    echo "String: \"$string3\" <br>";
+    echo "String: \"$replace\" ";
 
     ?>
 </body>
