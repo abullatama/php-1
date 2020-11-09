@@ -55,6 +55,9 @@
 
     echo "</ol>";
 
+    //Soal 3
+    echo "<h3> Soal 3</h3>";
+
     /*
             SOAL No 3
             Susun data-data berikut ke dalam bentuk Asosiatif Array (Array Multidimensi)
@@ -80,7 +83,23 @@
             Status: "Alive"
             
         */
+    $member = [
+        ["Name" => "Will Byers", "Age" => 12, "Aliases" => "Will the Wise", "Status" => "Alive"],
+        ["Name" => "Mike Wheeler", "Age" => 12, "Aliases" => "Dungeon Master", "Status" => "Alive"],
+        ["Name" => "Jim Hopper", "Age" => 43, "Aliases" => "Chief Hopper", "Status" => "Deceased"],
+        ["Name" => "Elevel", "Age" => 12, "Aliases" => "El", "Status" => "Alive"],
+    ];
 
+    var_dump($member[0]);
+    echo "<br>";
+    var_dump($member[1]);
+    echo "<br>";
+    var_dump($member[2]);
+    echo "<br>";
+    var_dump($member[3]);
+    echo "<br>";
+    echo "<br>";
+    echo "My Character: " . $member[0]["Name"] . "<br>";
     ?>
 </body>
 
