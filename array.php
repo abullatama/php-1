@@ -12,6 +12,7 @@
     <h1>Berlatih Array</h1>
 
     <?php
+    //Soal 1
     echo "<h3> Soal 1 </h3>";
     /* 
             SOAL NO 1
@@ -19,8 +20,9 @@
             Kids : "Mike", "Dustin", "Will", "Lucas", "Max", "Eleven" 
             Adults: "Hopper", "Nancy",  "Joyce", "Jonathan", "Murray"
         */
-    $kids; // Lengkapi di sini
-    $adults;
+    $kids = ["Mike", "Dustin", "Will", "Lucas", "Max", "Eleven"];
+    $adults = ["Hopper", "Nancy", "Joyce", "Jonathan", "Murray"];
+
     echo "<h3> Soal 2</h3>";
     /* 
             SOAL NO 2
