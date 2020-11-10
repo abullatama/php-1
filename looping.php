@@ -51,6 +51,7 @@
     }
 
     $i = $i - 2;
+    echo "<br>";
     echo "LOOPING KEDUA <br>";
     while ($i >= 1) {
         echo $i . " - I Love PHP <br>";
@@ -68,12 +69,18 @@
         */
 
     $numbers = [18, 45, 29, 61, 47, 34];
-    echo "array numbers: ";
+    echo "Array numbers: ";
     print_r($numbers);
-    // Lakukan Looping di sini
-
+    $rest = [];
+    $i = 0;
+    while ($i <= count($numbers) - 1) {
+        $sisa = $numbers[$i] % 5;
+        array_push($rest, $sisa);
+        $i++;
+    }
     echo "<br>";
-    echo "Array sisa baginya adalah:  ";
+    echo "Array sisa baginya adalah: ";
+    print_r($rest);
     echo "<br>";
 
 
