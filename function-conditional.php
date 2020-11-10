@@ -59,14 +59,14 @@
             $i--;
         }
         $newStr = implode("", $newArr);
-        echo $newStr;
-        echo "<br>";
+        return $newStr;
     }
 
-    reverseString("abduh");
-    reverseString("Sanbercode");
-    reverseString("We Are Sanbers Developers");
+    echo reverseString("abduh") . "<br>";
+    echo reverseString("Sanbercode") . "<br>";
+    echo reverseString("We Are Sanbers Developers") . "<br>";
     echo "<br>";
+
 
     //Soal 3
     echo "<h3>Soal No 3 Palindrome </h3>";
@@ -83,15 +83,20 @@
             NB: DILARANG menggunakan built-in function PHP seperti strrev() dll. Gunakan looping seperti biasa atau gunakan function reverseString dari jawaban no.2!
             
         */
+    function palindrome($word)
+    {
+        $reverse = reverseString($word);
+        if ($word === $reverse) {
+            echo "true<br>";
+        } else {
+            echo "false<br>";
+        }
+    }
 
-
-    // Code function di sini
-
-    // Hapus komentar di bawah ini untuk jalankan code
-    // palindrome("civic") ; // true
-    // palindrome("nababan") ; // true
-    // palindrome("jambaban"); // false
-    // palindrome("racecar"); // true
+    palindrome("civic"); // true
+    palindrome("nababan"); // true
+    palindrome("jambaban"); // false
+    palindrome("racecar"); // true
     ?>
 </body>
 
