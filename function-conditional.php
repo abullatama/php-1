@@ -12,6 +12,7 @@
     <h1>Berlatih Function PHP</h1>
     <?php
 
+    //Soal 1
     echo "<h3> Soal No 1 Greetings </h3>";
     /* 
             Soal No 1
@@ -22,16 +23,18 @@
             Output: "Halo Abduh, Selamat Datang di Sanbercode!"
         */
 
-    // Code function di sini
+    function greetings($name)
+    {
+        echo $name . "<br>";
+    }
 
-
-    // Hapus komentar untuk menjalankan code!
-    // greetings("Bagas");
-    // greetings("Wahyu");
-    // greetings("Abdul");
+    greetings("Bagas");
+    greetings("Wahyu");
+    greetings("Abdul");
 
     echo "<br>";
 
+    //Soal 2
     echo "<h3>Soal No 2 Reverse String</h3>";
     /* 
             Soal No 2
