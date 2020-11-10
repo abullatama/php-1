@@ -70,17 +70,19 @@
 
     $numbers = [18, 45, 29, 61, 47, 34];
     echo "Array numbers: ";
+    echo "<pre>";
     print_r($numbers);
+    echo "</pre>";
     $rest = [];
-    $i = 0;
-    while ($i <= count($numbers) - 1) {
-        $sisa = $numbers[$i] % 5;
+    foreach ($numbers as $key) {
+        $sisa = $key % 5;
         array_push($rest, $sisa);
-        $i++;
     }
     echo "<br>";
     echo "Array sisa baginya adalah: ";
+    echo "<pre>";
     print_r($rest);
+    echo "</pre>";
     echo "<br>";
 
 
@@ -104,9 +106,19 @@
         ['003', 'Mouse Genius', 50000, 'Mouse Genius biar lebih pinter', 'genius.jpeg'],
         ['004', 'Mouse Jerry', 30000, 'Mouse yang disukai kucing', 'jerry.jpeg']
     ];
+    for ($i = 0; $i <= count($items) - 1; $i++) {
+        $newItems[$i]["id"] = $items[$i][0];
+        $newItems[$i]["name"] = $items[$i][1];
+        $newItems[$i]["price"] = $items[$i][2];
+        $newItems[$i]["description"] = $items[$i][3];
+        $newItems[$i]["source"] = $items[$i][4];
+    }
+    echo "<pre>";
+    print_r($newItems);
+    echo "</pre>";
 
-    // Output: 
 
+    //Soal 4
     echo "<h3>Soal No 4 Asterix </h3>";
     /* 
             Soal No 4
