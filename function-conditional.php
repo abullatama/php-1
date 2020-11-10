@@ -49,14 +49,26 @@
         */
 
     // Code function di sini 
+    function reverseString($string)
+    {
+        $arrStr = str_split($string);
+        $arrLength = count($arrStr);
+        $i = $arrLength - 1;
+        while ($i >= 0) {
+            $newArr[] = $arrStr[$i];
+            $i--;
+        }
+        $newStr = implode("", $newArr);
+        echo $newStr;
+        echo "<br>";
+    }
 
-
-    // Hapus komentar di bawah ini untuk jalankan Code
-    // reverseString("abduh");
-    // reverseString("Sanbercode");
-    // reverseString("We Are Sanbers Developers")
+    reverseString("abduh");
+    reverseString("Sanbercode");
+    reverseString("We Are Sanbers Developers");
     echo "<br>";
 
+    //Soal 3
     echo "<h3>Soal No 3 Palindrome </h3>";
     /* 
             Soal No 3 
